@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.min.js"></script>
+    <title>Salary Caculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class=col-md-12>
+                    <h1>Salary Caculator</h1>
+                    <h3>Add Employee</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label>First Name</label>
+                    <input autocomplete="name" type="text" class="form-control inputInfo" id="firstname" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Last Name</label>
+                    <input autocomplete="family-name" type="text" class="form-control" id="lastname" placeholder="Last Name">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>ID</label>
+                    <input type="number" min="0" class="form-control" id="idNumber" placeholder="ID">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Job Title</label>
+                    <input type="text" class="form-control" id="jobTitle" placeholder="Job Title">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Annual Salary</label>
+                    <input type="number" min="0" class="form-control" id="annualSalary" placeholder="Annual Salary">
+                </div>
+                <div class="col-md-12">
+                    <button id="submitButton" type="button" class="btn btn-primary pull-right">Submit</button>
+                </div>
+            </div>
+            <div>
+                <table class="table table-sm table-striped">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID</th>
+                        <th>Job Title</th>
+                        <th>Annual Salary</th>
+                    </tr>
+                    <tbody id="listOfEmployee">
+                    </tbody>
+                </table>
+                <span id="totalMonthSalary" class="pull-right"></span>
+                <span class="pull-right">Total Monthly Salary:&nbsp;</span>
+            </div>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

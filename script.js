@@ -18,7 +18,7 @@ function clickHandler() {
     let lastName = $('#lastname').val();
     let idNumber = $('#idNumber').val();
     let jobTitle = $('#jobTitle').val();
-    let annualSalary = Number($('#annualSalary').val(), 10);
+    let annualSalary = Number($('#annualSalary').val());
     let employee = firstName && lastName && idNumber && jobTitle && annualSalary
     if (employee) {
         addMonthlySalary()

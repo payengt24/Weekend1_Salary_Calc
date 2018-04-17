@@ -1,5 +1,7 @@
 console.log('js');
 
+const emplyoeeList = []
+
 $(document).ready(readyNow);
 //variables
 let totalMonthlySalary = [];
@@ -31,8 +33,9 @@ function clickHandler() {
     }
 
     //clear data input
-    $('#firstname').val(''), $('#lastname').val(''), $('#idNumber').val(''), $('#jobTitle').val('') , $('#annualSalary').val('') 
-    $('table')
+    // $('#firstname').val(''), $('#lastname').val(''), $('#idNumber').val(''), $('#jobTitle').val('') , $('#annualSalary').val('') 
+    // $('table')
+    $('input').val('');
 }
 
 //changing the color of the total monthly salary rate to red once it reached 20000 or more
@@ -63,6 +66,7 @@ function addEmployee() {
 
 function deleteButton () {
     $('table').on('click', 'button', function (){
+        emplyoeeInformation.push(string($('clickHandler').val()));
         let index = $(this).parents('tr').data('index');
         totalMonthlySalary.splice(index, 1);
     });
